@@ -15,10 +15,10 @@ public class LaunchApp {
 
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+            desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
+            desiredCapabilities.setCapability(MobileCapabilityType.APP, "/Users/Skyeng/Downloads/skyeng.apk");
+            desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_XL_API_29");
             desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-            desiredCapabilities.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-            desiredCapabilities.setCapability("AppPackage", "skyeng.words.prod");
-            desiredCapabilities.setCapability("AppActivity", "skyeng.words.ui.main.MainActivity");
 
             URL appiumServer = new URL("http://localhost:4723/wd/hub");
 
